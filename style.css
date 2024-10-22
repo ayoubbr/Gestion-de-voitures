@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+.Y-wrapper{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.Y-signin{
+    color: white;
+    display: grid;
+    grid-template-rows: 30% 25% 25% 20%;
+    align-items: start;
+    font-size: 30px;
+    grid-gap: 5px;
+}
+
+.Y-button{
+    background-color: black;
+    border-color: white;
+    border-width: 4px;
+    color: white;
+    padding: ;
+    font-size: ;
+    border-radius: 0;
+    width: 458px;
+    height: 97px;
+}
