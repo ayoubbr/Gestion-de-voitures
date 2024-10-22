@@ -1,0 +1,62 @@
+/* =============  GENERAL RULES  ============== */
+
+:root {
+    --bg-color: #bcc3c6;
+    --text-color: #050505;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: fantasy, "Courier New", Courier, monospace, serif;
+    background-color: var(--bg-color);
+    padding: 50px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant", serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* =============  HOME PAGE  ============== */
+  
+  header {
+    background-color: #e0e5e7;
+    border-radius: 6px;
+  }
+  
+  h1 {
+    font-size: 205px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .B-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 65px;
+  }
+  
+  .B-navbar ul {
+    display: flex;
+    min-width: 560px;
+    justify-content: space-between;
+  }
+  
