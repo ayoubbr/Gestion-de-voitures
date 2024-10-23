@@ -60,6 +60,8 @@
     justify-content: space-between;
   }
 
+  ==============================================Sign in an Sign up==========================================================
+
 .Y-wrapper{
     height: 100vh;
     background-color: black;
@@ -83,9 +85,102 @@
     border-color: white;
     border-width: 4px;
     color: white;
-    padding: ;
-    font-size: ;
     border-radius: 0;
     width: 458px;
     height: 97px;
 }
+
+.icons img{
+  height: 16px;
+}
+
+.Y-container{
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+}
+
+.signupClass{
+  text-align: center;
+  font-size: 34px;
+  color: black;
+  padding-bottom: 34px;
+}
+
+.Y-container2{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+
+}
+
+.icon-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  border: 2px solid black;
+  
+}
+
+.icons{
+  padding: 10px;
+}
+
+.hr-line p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+hr{
+  width: 193px;
+}
+
+.hr-line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.Y-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 34px;
+  border: 2px solid black;
+}
+
+.Y-name-inputs{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-top: 25px;
+}
+
+.names-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Y-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.Y-input input,
+.names-input input{
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+==============================================Sign in an Sign up==========================================================
