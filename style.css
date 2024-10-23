@@ -221,14 +221,65 @@ h1 {
   bottom: 30px;
 }
 
-/* =================== PHONE SCREEN  ======================== */
-@media (max-width: 1000px) {
-  h1 {
-    font-size: 100px;
-  }
+/* =====================   FOOTER  ========================= */
+footer {
+  background-color: var(--text-color);
+  height: 80vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 50px;
 }
 
-@media (max-width: 440px) {
+.b-footer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .b-forms {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0px;
+}
+
+footer .a-1section-h3 {
+  padding-top: 10px !important;
+}
+
+footer .b-main-btn {
+  border-color: white;
+  border-radius: 6px;
+}
+
+footer .b-footer-button-box {
+  display: flex;
+  width: 400px;
+  justify-content: end;
+}
+
+.b-footer-nav {
+  width: 100%;
+  padding: 15px 35px 0px;
+  font-family: "Cormorant";
+  font-size: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer ul li a {
+  color: white;
+}
+
+/* =================== PHONE SCREEN  ======================== */
+@media (max-width: 451px) {
   body {
     padding: 10px;
   }
@@ -236,18 +287,20 @@ h1 {
     font-size: 20px;
   }
 
-  .b-about  h2, .b-models h2 {
+  .b-about h2,
+  .b-models h2 {
     font-size: 20px;
   }
   .b-navbar ul {
     display: none;
   }
-  .b-about img{
+  .b-about img {
     max-width: 300px;
     height: fit-content;
   }
 
-  .b-about p, .b-about a{
+  .b-about p,
+  .b-about a {
     font-size: 12px;
     max-width: 200px;
   }
@@ -277,64 +330,62 @@ h1 {
   border-color: white;
   border-width: 4px;
   color: white;
-  padding: ;
-  font-size: ;
   border-radius: 0;
   width: 458px;
   height: 97px;
 }
 
-/*============ adding car page =======*/ 
-.a-add-car-h2{
+/*============ adding car page =======*/
+.a-add-car-h2 {
   padding: 0.5em 0em 0.5em 2em;
   font-size: 5em;
   font-weight: 500;
 }
-.a-add-car{
-  background-color: #E0E5E7;
+.a-add-car {
+  background-color: #e0e5e7;
 }
-.a-main{
-  background-color: #BCC3C6;
+.a-main {
+  background-color: #bcc3c6;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content:space-between;
+  justify-content: space-between;
   align-content: space-between;
   align-items: end;
   justify-items: end;
 }
-.a-forms{
+.a-forms {
   font-size: 16px;
   text-align: center;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 1em;
   align-items: start;
   justify-content: space-evenly;
 }
-#a-main-div-form{
+#a-main-div-form {
   padding: 6em 8em;
 }
 
-#a-main-div-form input{
-    border: none;
-    border-bottom: 1px solid black;
-    background-color: #BCC3C6;
-    color: black;
-    width: 400px;
-    min-height: 30px;
+#a-main-div-form input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #bcc3c6;
+  color: black;
+  width: 400px;
+  min-height: 30px;
 }
 
-#a-main-div-form label{
+#a-main-div-form label {
   padding-left: 20px;
 }
-#abircars5{
-    width: fit-content;
-    height: fit-content;
+#abircars5 {
+  width: fit-content;
+  height: fit-content;
 }
-.a-1section{
+.a-1section {
   background-color: #050505;
 }
-.a-1section-h3{
+.a-1section-h3 {
   color: white;
   font-size: 50px;
   text-align: center;
@@ -342,34 +393,31 @@ h1 {
   font-weight: 400;
 }
 
-.a-1section-div{
+.a-1section-div {
   display: grid;
   gap: 4em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 6em;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   align-items: center;
   justify-items: center;
-  
 }
 #a-1section-div-form1,
-#a-1section-div-form2{
+#a-1section-div-form2 {
   color: white;
-  
 }
 #a-1section-div-form1 input,
-#a-1section-div-form2 input{
-   border: none;
-    border-bottom: 1px solid white;
-    background-color: black;
-    color: white;
-    width: 400px;
-    min-height: 30px;
+#a-1section-div-form2 input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+  width: 400px;
+  min-height: 30px;
 }
-.a-1section-1img{
+.a-1section-1img {
   width: 400px;
   padding-bottom: 2em;
-
 }
