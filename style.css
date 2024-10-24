@@ -373,3 +373,31 @@ h1 {
   padding-bottom: 2em;
 
 }
+.a-2section-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em  ;
+}
+.a-basket-main{
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+}
+.a-basket-main-div{
+  margin: 2em;
+  padding: 2em;
+  background-color: white;
+  display: flex;
+  gap: 6em;
+  flex-wrap: wrap;
+}
+.a-main-div-img{
+  width: 400px;
+}
+.a-main-div-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: end;
+}
