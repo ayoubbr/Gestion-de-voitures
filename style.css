@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", monospace, serif;
   background-color: var(--bg-color);
@@ -54,12 +58,40 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 5px 65px;
+  align-items: center;
+}
+
+.b-navbar .bars {
+  display: none;
+}
+
+.b-navbar-login {
+  display: flex;
+  gap: 30px;
+}
+.b-navbar-login a {
+  background-color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1.5px solid;
+  transition: 0.4s;
+}
+.b-navbar-login a:hover {
+  background-color: white;
 }
 
 .b-navbar ul {
   display: flex;
   min-width: 560px;
   justify-content: space-between;
+}
+.b-navbar ul a {
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+.b-navbar ul a:hover {
+  color: white;
+  background-color: black;
 }
 
 .b-models-header {
@@ -99,12 +131,18 @@ h1 {
 .b-main-btn,
 .b-second-btn {
   color: white;
-  border-radius: 2px;
+  border-radius: 8px;
   width: 100px;
   height: 50px;
   padding: 15px;
-  border: 0.5px solid var(--text-color);
+  border: 1.5px solid var(--text-color);
   background-color: var(--text-color);
+  transition: 0.4s;
+}
+
+.b-main-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .b-models {
@@ -124,6 +162,10 @@ h1 {
   flex-direction: column;
   gap: 20px;
 }
+.b-second-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 .b-models-cars-car .b-second-btn {
   padding: 5px;
   font-size: 12px;
@@ -132,11 +174,26 @@ h1 {
 .b-models-cars-car img {
   width: fit-content;
 }
-
+.b-models-cars-car .b-buy-btn {
+  transition: 0.4s;
+}
+.b-models-cars-car .b-buy-btn:hover {
+  background-color: white;
+  color: var(--text-color);
+}
+.b-models-cars .b-main-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .b-models .b-main-btn {
   background-color: var(--text-color);
   padding: 10px 30px;
   border-radius: 6px;
+}
+.b-models .b-main-btn:hover {
+  background-color: var(--bg-color);
 }
 .b-second-btn {
   background-color: white;
@@ -224,13 +281,13 @@ h1 {
 /* =====================   FOOTER  ========================= */
 footer {
   background-color: var(--text-color);
-  height: 80vh;
+  height: 600px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
   gap: 50px;
+  border-radius: 0px 0px 6px 6px;
 }
 
 .b-footer-header {
@@ -283,13 +340,78 @@ footer ul li a {
   body {
     padding: 10px;
   }
+
+  header {
+    height: 90vh;
+  }
   h1 {
-    font-size: 20px;
+    position: absolute;
+    font-size: 65px;
+    top: 150px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .b-navbar {
+    padding: 20px 25px;
+  }
+  .b-mercedes {
+    display: none;
+  }
+  .b-navbar-login {
+    gap: 10px;
+  }
+
+  .b-navbar-login a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .b-navbar span,
+  .b-navbar .bars {
+    font-size: 25px;
+  }
+
+  .b-navbar .bars {
+    display: block;
+  }
+
+  .b-header-box {
+    top: 325px;
+  }
+
+  .b-header-box-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .b-header-box-content div {
+    margin-top: 20px;
+  }
+
+  .b-models {
+    padding: 30px;
   }
 
   .b-about h2,
   .b-models h2 {
-    font-size: 20px;
+    font-size: 35px;
+  }
+
+  .b-models-filter .b-second-btn,
+  .b-models-filter .b-main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .b-models-filter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+  }
+  .b-models-header {
+    padding: 60px 2px 20px;
   }
   .b-navbar ul {
     display: none;
@@ -298,11 +420,49 @@ footer ul li a {
     max-width: 300px;
     height: fit-content;
   }
+  .b-about {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+  }
 
   .b-about p,
   .b-about a {
     font-size: 12px;
     max-width: 200px;
+  }
+  footer {
+    height: 670px;
+    gap: 30px;
+  }
+  footer .b-footer-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer form input {
+    width: 100% !important;
+  }
+  footer .b-footer-button-box {
+    display: flex;
+    width: 350px;
+    justify-content: end;
+  }
+  .b-footer-nav {
+    padding: 15px 35px 0px;
+    font-size: 15px;
+  }
+
+  .b-footer-nav ul {
+    display: grid;
+    padding: 15px 35px 0px;
+    font-size: 15px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+  .b-footer-nav ul li:last-child {
+    grid-column: 2 / 4;
   }
 }
 
@@ -335,7 +495,7 @@ footer ul li a {
   height: 97px;
 }
 
-/*============ adding car page =======*/
+/* /============ adding car page  =======/ */
 .a-add-car-h2 {
   padding: 0.5em 0em 0.5em 2em;
   font-size: 5em;
