@@ -510,6 +510,7 @@ footer ul li a {
   justify-items: center;
   align-items: center;
 }
+
 /* ==============================================Sign in an Sign up========================================================== */
 
 .Y-wrapper {
@@ -557,6 +558,7 @@ footer ul li a {
   width: 458px;
   height: 97px;
 }
+
 .Y-button {
   background-color: black;
   border-color: white;
@@ -725,6 +727,7 @@ footer ul li a {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 hr {
   width: 193px;
 }
@@ -806,36 +809,43 @@ hr {
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .K-sectionP-div1 {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
 .K-sectionP-infos {
   background-color: white;
   display: flex;
   flex-direction: column;
   width: 43.52%;
 }
+
 .K-sectionP-infos p {
   height: 75px;
   align-content: center;
   align-content: center;
   padding: 15px;
 }
+
 .K-desc1 {
   display: flex;
   justify-content: space-between;
   background-color: #bcc3c6;
 }
+
 .K-desc2 {
   display: flex;
   justify-content: space-between;
 }
+
 .K-desc3 {
   display: flex;
   justify-content: space-between;
 }
+
 .K-desc4 {
   display: flex;
   justify-content: space-between;
@@ -873,6 +883,7 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .sectionP-imgCar-Pimages-img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -895,16 +906,19 @@ hr {
   justify-content: space-between;
   padding: 20px;
 }
+
 .K-Overview-desc {
   display: flex;
   justify-content: space-between;
 }
+
 .K-Overview-desc1 {
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 20px;
 }
+
 .K-Overview-desc2 {
   display: flex;
   flex-direction: column;
@@ -912,12 +926,14 @@ hr {
   color: #999999;
   gap: 20px;
 }
+
 .K-Overview-desc3 {
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 20px;
 }
+
 .K-Overview-desc4 {
   display: flex;
   flex-direction: column;
@@ -925,10 +941,149 @@ hr {
   color: #999999;
   gap: 20px;
 }
-@media (max-width: 1000px) {
+
+.K-modify{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.K-sectionP-button {
+  color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  background-color: var(--text-color);
+  transition: 0.4s;
+  
+}
+
+.K-add{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.K-addcar{
+  color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  background-color: var(--text-color);
+  transition: 0.4s;
+}
+
+/*================================ page detail de l'utilisateur ================================ */
+
+
+@media (max-width:1000px) {
+  .K-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
   .K-sectionP-imgCar-Pimages {
     display: flex;
     flex-direction: row;
+  }
+
+  .K-sectionP {
+    display: flex;
+    justify-content: center;
+  }
+
+  .K-sectionP-imgCar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .K-sectionP-infos {
+    width: 100%;
+  }
+
+  .K-sectionP-autres {
+    width: 100%;
+  }
+
+  .K-hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 451px) {
+  .K-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .K-sectionP{
+    display: flex;
+    justify-content: center;
+  } */
+
+  .K-sectionP-imgCar {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 100%;
+  }
+
+  .K-infosCar {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+  }
+
+  .K-info {
+    display: none;
+    padding: 20px;
+  }
+
+  .K-sectionP-div1 {
+    width: 100%;
+  }
+
+  .K-sectionP-imgCar-Gimage img {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .K-sectionP-imgCar-Pimages {
+    display: flex;
+    gap: 5px;
+  }
+
+  .K-sectionP-imgCar-Pimages img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .K-sectionP-autres {
+    background-color: #FFFFFF;
+    /* padding: 20px; */
+    border-radius: 15px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .K-Overview-desc {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
   }
 }
 
