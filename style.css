@@ -1108,7 +1108,7 @@ hr {
 .a-dialog-section{
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2em;
@@ -1123,7 +1123,7 @@ hr {
   padding: 4em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   gap: 2em;
 }
@@ -1146,7 +1146,7 @@ hr {
 }
 .a-dialog-btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .a-dialog-btn button{
   border: 0.2em black ;
@@ -1160,3 +1160,57 @@ hr {
   gap: 2em;
 }
 /*============================== fin modifying ==========*/
+/*********************** basket *********************/
+.a-basket-main{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.a-basket-main-div{
+  display: flex;
+  /* flex-direction: ; */
+  /* align-content: center; */
+  background-color: white;
+  gap: 2em;
+  
+}
+.a-main-div-img{
+  display: block;
+  max-width: 20%;
+ 
+
+}
+.a-main-div-div{
+  display: flex;
+  gap: 45em;
+  align-items: center;
+  justify-content: center;
+
+}
+.a-main-div-div a,
+.order-all a{
+  padding: 0.2em 0.5em;
+  font-size: 20.5m;
+  background-color: red;
+  border-radius: 8px;
+}
+.a-main-div-div-div{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap ;
+
+}
+.order-all a{
+  display: flex;
+  align-content: end;
+  margin-bottom: 2em;
+  align-items: center;
+ justify-items: center;
+  color: white;
+  padding: 0.2em 0.5em;
+  font-size: 1.5em;
+  background-color: red;
+  border-radius: 8px;
+}
