@@ -354,6 +354,126 @@ footer ul {
 footer ul li a {
   color: white;
 }
+/* =================== ORDERS  ======================== */
+
+.b-orders-header {
+  background-color: var(--bg-color);
+}
+
+.b-orders-main {
+  background-color: white;
+  padding: 20px 40px;
+}
+
+.b-orders-main h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+.b-orders-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.b-orders-content-order {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1caca;
+}
+.b-orders-content-order-header,
+.b-orders-content-order-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: var(--text-color);
+  color: white;
+}
+
+.b-orders-content-order-header div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.b-orders-content-order-header div :first-child {
+  color: #969696;
+}
+
+.b-orders-content-order-header {
+  border-bottom: 1px solid #d1caca;
+}
+
+.b-orders-content-order-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.b-orders-img-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.b-orders-content-order-content .b-orders-img-box img {
+  width: 400px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.b-orders-content-order-content .b-orders-img-box h3 {
+  display: none;
+}
+.b-orders-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 1400px;
+}
+.b-orders-content-text h3 {
+  font-size: 28px;
+}
+.b-orders-content-text > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.b-orders-content-text > div > div {
+  display: flex;
+  gap: 20px;
+}
+.b-orders-box-btn-delete {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: end;
+  padding-right: 40px;
+  height: 220px;
+}
+.b-orders-btn-delete {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(214, 45, 45);
+}
+.b-orders-content-order-footer {
+  border-top: 1px solid #d1caca;
+}
+.b-orders-content-order-footer div {
+  display: flex;
+  gap: 40px;
+}
+
+.b-orders-content-order-footer div :first-child {
+  color: #969696;
+}
+
+.b-orders-footer {
+  height: 10vh;
+  padding: 10px;
+}
 
 /* =================== PHONE SCREEN  ======================== */
 @media (max-width: 451px) {
@@ -499,6 +619,50 @@ footer ul li a {
   .b-footer-nav ul li:last-child {
     grid-column: 2 / 4;
   }
+  /* ==============  Phone screen for orders page=============== */
+  .b-orders-header {
+    height: 11.5vh !important;
+  }
+  .b-orders-content-order-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+
+  .b-orders-content-order-header p.b-orders-details {
+    display: none;
+  }
+  .b-orders-content-order-content {
+    flex-wrap: wrap;
+  }
+  .b-orders-img-box {
+    justify-content: center;
+  }
+  .b-orders-img-box img {
+    width: 320px !important;
+  }
+  .b-orders-img-box h3 {
+    display: inline !important;
+  }
+  .b-orders-content-order-content {
+    justify-content: center;
+  }
+  .b-orders-content-text {
+    padding: 5px 30px;
+  }
+  .b-orders-box-btn-delete {
+    padding: 5px 30px;
+    justify-content: start;
+    height: 80px;
+  }
+  .b-orders-footer {
+    height: 25vh;
+  }
+}
+@media (min-width: 300px) {
+  .b-footer-nav ul {
+    padding: 0px;
+  }
 }
 
 /* =========================================== */
@@ -630,7 +794,6 @@ footer ul li a {
 #abircars5 {
   max-width: 100%;
   display: block;
-
 }
 
 .a-1section {
@@ -769,7 +932,6 @@ hr {
 }
 
 /* ==============================================END Sign in an Sign up========================================================== */
-
 
 /* ================================ PAGE DETAIL ================================== */
 
