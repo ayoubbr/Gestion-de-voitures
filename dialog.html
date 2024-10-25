@@ -19,7 +19,7 @@
 
 <body>
     <div class="a-modify-body">
-        <dialog class="a-modify" open>
+        <dialog class="a-modify" id="modifyDialog" open>
             <main class="a-dialog-main">
                 <h3 class="a-modify-h3">General Informations : </h3>
                 <div class="a-dialog-main-div">
@@ -99,15 +99,24 @@
             </section>
             <div class="a-dialog-btn">
                 <div class="a-dialog-btn1">
-                    <a href="#" style="background-color: red;">Delete</a>
+                    <button style="background-color: red;">Delete</button>
                 </div>
                 <div class="a-dialog-btn2">
-                    <a href="#">Cancel</a>
-                    <a href="#">Save changes</a>
+                    <button=>Cancel</button>
+                    <button onclick=closeModifyDialog() type="button">Save changes</button>
                 </div>
             </div>
         </dialog>
     </div>
+    <script>
+        const dialog = document.getElementById("modifyDialog");
+        function showModifyDialog(){
+            dialog.showModal()
+        }
+        function closeModifyDialog(){
+            dialog.close()
+        }
+    </script>
 
 </body>
 

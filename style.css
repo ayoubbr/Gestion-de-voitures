@@ -940,7 +940,7 @@ hr {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color:#dce5e9;
+  background-color:#E0E5E7;
   border-radius: 8px;
   flex-direction: column;
   gap: 2em;
@@ -993,7 +993,7 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.a-dialog-btn a{
+.a-dialog-btn button{
   border: 0.2em black ;
   border-radius: 5px;
   padding: 0.5em 1em;
