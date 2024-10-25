@@ -1,85 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
-    <dialog class="a-modify">
-        <main class="a-dialog-main">
-            <h3>General Informations : </h3>
-            <form class="a-dialog-main-form">
-                <label for="fname"> name :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname"> Milsage :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname"> transmission :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname"> MPG :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname"> Fuel :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-            </form>
-        </main>
-        <section class="a-dialog-section1">
-            <h3>Fintancing :</h3>
-            <form class="a-dialog-main-form">
-                <label for="fname">Sales price* : :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Totale fees & taxes :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Warranty :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">GAP :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Cash price :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Net trade : :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Rebate :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Down payment :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Load balance :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">term :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">ARP :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-            </form>
-        </section>
-        <section class="a-dialog-section2">
-            <h3>Overview :</h3>
-            <form class="a-dialog-main-form">
-                <label for="fname">Features :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Body style :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Drive Type :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Exterior color :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Interior color :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Engine :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Horsepower :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Stock :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Certified :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="fname">VIN :</label>
-                <input type="text" id="fname" name="fname"><br><br>
-            </form>
-        </section>
-        <div class="a-dialog-btn">
-            <a href="#">Delete</a>
-            <a href="#">Cancel</a>
-            <a href="#">Save changes</a>
+    <nav class="b-navbar">
+        <i class="fa-solid fa-bars bars"></i>
+        <span class="b-mercedes"><img src="./images/logo.png" alt="" width="50px"></span>
+        <ul>
+          <li><a href="./index.html#contact">Contact us</a></li>
+          <li><a href="./index.html#about">About us</a></li>
+          <li><a href="./Basket.html">Cart</a></li>
+          <li><a href="./orders.html">Orders</a></li>
+        </ul>
+        <div class="b-navbar-login">
+          <a href="./sign-in.html">Sign in</a>
+          <a href="./sign-up.html">Sign up</a>
         </div>
-    </dialog>
-    
+      </nav>
+    <div class="a-modify-body">
+        <section class="a-modify" >
+            <main class="a-dialog-main">
+                <h3 class="a-modify-h3">General Informations : </h3>
+                <div class="a-dialog-main-div">
+                    <form class="a-dialog-main-form">
+                        <label for="fname"> MPG :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname"> Fuel :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname"> Price :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </form>
+                    <form class="a-dialog-main-form">
+                        <label for="fname"> name :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname"> Milsage :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname"> transmission :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </form>
+
+
+                </div>
+            </main>
+            <section class="a-dialog-section">
+                <div class="a-dialog-section-div">
+                    <h3 class="a-modify-h3">Fintancing :</h3>
+                    <form class="a-dialog-main-form">
+                        <label for="fname">Sales price* : :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Totale fees & taxes :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Warranty :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">GAP :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Cash price :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Net trade : :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Rebate :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Down payment :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Load balance :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">term :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">ARP :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </form>
+                </div>
+                <div class="a-dialog-section-div">
+                    <h3 class="a-modify-h3">Overview :</h3>
+                    <form class="a-dialog-main-form">
+                        <label for="fname">Features :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Body style :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Drive Type :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Exterior color :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Interior color :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Engine :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Horsepower :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Stock :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">Certified :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fname">VIN :</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </form>
+                </div>
+            </section>
+            <div class="a-dialog-btn">
+                <div class="a-dialog-btn1">
+                    <button style="background-color: red;">Delete</button>
+                </div>
+                <div class="a-dialog-btn2">
+                    <button>Cancel</button>
+                    <button >Save changes</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="b-footer-header" id="contact">
+          <h3 class="a-1section-h3">Contact Us</h3>
+          <form id="a-1section-div-form1" class="a-forms b-forms">
+            <label>Your name</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label>Email address</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label>Your message</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+          </form>
+          <div class="b-footer-button-box">
+            <a href="" class="b-main-btn">Send Now</a>
+          </div>
+        </div>
+        <div class="b-footer-nav">
+          <ul>
+            <li><a href=""> Legal and compliance </a></li>
+            <li><a href=""> Usage agreement </a></li>
+            <li><a href=""> Privacy policy </a></li>
+            <li><a href=""> Cookies policy </a></li>
+            <li><a href=""> Industry guidances for emergency responders </a></li>
+          </ul>
+        </div>
+      </footer>
+    <!-- <script>
+        const dialog = document.getElementById("modifyDialog");
+        function showModifyDialog(){
+            dialog.showModal()
+        }
+        function closeModifyDialog(){
+            dialog.close()
+        }
+    </script> -->
+
 </body>
+
 </html>
