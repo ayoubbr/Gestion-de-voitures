@@ -928,3 +928,51 @@ hr {
 }
 
 /* ================================ PAGE DETAIL ================================== */
+/* ================================page checkout==================================*/
+
+.Y-big-line{
+  width: 1300px;
+  margin: 32px;
+}
+
+.Y-between-lines{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.Y-check{
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.Y-checkout-area{
+  background-color: #D5D5D5;
+}
+
+.Y-payment-div{
+  padding-bottom: 10px;
+}
+
+.Y-payment-div .Y-p-para{
+  font-size: 14px;
+}
+
+.Y-payment-div .Y-PP-para{
+  font-size: 20px;
+}
+
+.Y-P-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.Y-checkout-area{
+  display: flex;
+  flex-direction: row;
+  
+}
+

@@ -31,36 +31,59 @@
             <p>complete</p>
         </div>
         <hr class="Y-big-line">
-<div class="Y-checkout-area">
-    <div class="Y-P-details">
-        <p>Payment details</p>
-        <p>Please fill out the form below. Enter your card account details.</p>
-        <form>
-            <label>Card number</label>
-            <input class="Y-card-number" type="tel" inputmode="numerique" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
-        </form>
-        <p>Expire date</p>
-            <select>
-                <option value=''>Month</option>
-                <option value='01'>January</option>
-                <option value='02'>February</option>
-                <option value='03'>March</option>
-                <option value='04'>April</option>
-                <option value='05'>May</option>
-                <option value='06'>June</option>
-                <option value='07'>July</option>
-                <option value='08'>August</option>
-                <option value='09'>September</option>
-                <option value='10'>October</option>
-                <option value='11'>November</option>
-                <option value='12'>December</option>
-            </select> 
 
-            <input type="number" min="2024" max="2099">
-        
+        <p class="Y-check">Check out</p>
 
-    </div>
-</div>
+        <div class="Y-checkout-area">
+            <div class="Y-P-details">
+                <div class="Y-payment-div">
+                    <p class="Y-PP-para">Payment details</p>
+                    <p class="Y-p-para">Please fill out the form below. Enter your card account details.</p>
+                </div>
+
+                <div class="Y-card-num">
+                    <form>
+                        <label>Card number</label>
+                        <input class="Y-card-number" type="tel" inputmode="numerique" pattern="[0-9\s]{13,19}"
+                            autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+                    </form>
+                </div>
+                <div class="Y-expireDate">
+                    <p>Expire date</p>
+                    <div class="Y-m-year">
+                        <select>
+                            <option value=''>Month</option>
+                            <option value='01'>January</option>
+                            <option value='02'>February</option>
+                            <option value='03'>March</option>
+                            <option value='04'>April</option>
+                            <option value='05'>May</option>
+                            <option value='06'>June</option>
+                            <option value='07'>July</option>
+                            <option value='08'>August</option>
+                            <option value='09'>September</option>
+                            <option value='10'>October</option>
+                            <option value='11'>November</option>
+                            <option value='12'>December</option>
+                        </select>
+
+
+                        <input type="number" min="2024" max="2099">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Y-summary">
+                <p>Summary</p>
+                <p>Vehicle type</p>
+                <hr>
+                <p>Price details</p>
+                <p>1,234.00$</p>
+
+            </div>
+
+        </div>
+        </div>
     </section>
 </body>
 
