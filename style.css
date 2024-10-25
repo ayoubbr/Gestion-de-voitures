@@ -973,7 +973,82 @@ hr {
 }
 
 /*================================ page detail de l'utilisateur ================================ */
+.K-modifyU {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
+.K-modifyU-div1 {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 50px;
+}
+
+.K-modifyU-infos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 43.52%;
+}
+
+.K-modifyU-infos p {
+  height: 75px;
+  align-content: center;
+  align-content: center;
+  padding: 15px;
+}
+.K-modifyU-imgCar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 50%;
+}
+
+.K-modifyU-imgCar-Gimage {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 450px;
+}
+
+.K-modifyU-imgCar-Pimages {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modifyU-imgCar-Pimages-img1 {
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modifyU-imgCar-Pimages-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #bcc3c6;
+}
+
+.K-modifyU-imgCar-Pimages img {
+  display: flex;
+  height: 96px;
+}
+
+.K-modifyU-autres {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+}
+/* =============================== version mobile =========================================*/
 
 @media (max-width:1000px) {
   .K-header {
