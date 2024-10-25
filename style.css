@@ -69,6 +69,7 @@ h1 {
   display: flex;
   gap: 30px;
 }
+
 .b-navbar-login a {
   background-color: var(--bg-color);
   padding: 10px 20px;
@@ -76,6 +77,7 @@ h1 {
   border: 1.5px solid;
   transition: 0.4s;
 }
+
 .b-navbar-login a:hover {
   background-color: white;
 }
@@ -85,10 +87,12 @@ h1 {
   min-width: 560px;
   justify-content: space-between;
 }
+
 .b-navbar ul a {
   padding: 10px 20px;
   transition: 0.4s;
 }
+
 .b-navbar ul a:hover {
   color: white;
   background-color: black;
@@ -149,6 +153,7 @@ h1 {
   background-color: white;
   padding: 80px;
 }
+
 .b-models-cars {
   display: flex;
   justify-content: center;
@@ -157,15 +162,18 @@ h1 {
   padding-top: 50px;
   flex-wrap: wrap;
 }
+
 .b-models-cars-car {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .b-second-btn:hover {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
 .b-models-cars-car .b-second-btn {
   padding: 5px;
   font-size: 12px;
@@ -174,27 +182,33 @@ h1 {
 .b-models-cars-car img {
   width: fit-content;
 }
+
 .b-models-cars-car .b-buy-btn {
   transition: 0.4s;
 }
+
 .b-models-cars-car .b-buy-btn:hover {
   background-color: white;
   color: var(--text-color);
 }
+
 .b-models-cars .b-main-btn {
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .b-models .b-main-btn {
   background-color: var(--text-color);
   padding: 10px 30px;
   border-radius: 6px;
 }
+
 .b-models .b-main-btn:hover {
   background-color: var(--bg-color);
 }
+
 .b-second-btn {
   background-color: white;
   color: var(--text-color);
@@ -205,9 +219,11 @@ h1 {
 .b-models-cars-info .b-second-btn {
   border-radius: 0px;
 }
+
 .b-models-cars-car-img {
   position: relative;
 }
+
 .b-models-cars-car-img a {
   position: absolute;
   bottom: 20px;
@@ -236,6 +252,7 @@ h1 {
   font-size: 46px;
   padding-bottom: 30px;
 }
+
 .b-about-cars {
   display: flex;
   justify-content: center;
@@ -252,6 +269,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .b-about-link {
   display: flex;
   flex-direction: column;
@@ -266,6 +284,7 @@ h1 {
   max-width: 299px;
   text-align: center;
 }
+
 .b-about-link a {
   font-size: 16px !important;
   width: 150px !important;
@@ -295,6 +314,7 @@ footer {
   flex-direction: column;
   align-items: start;
 }
+
 footer .b-forms {
   display: flex;
   justify-content: center;
@@ -344,6 +364,7 @@ footer ul li a {
   header {
     height: 90vh;
   }
+
   h1 {
     position: absolute;
     font-size: 65px;
@@ -351,12 +372,15 @@ footer ul li a {
     text-align: center;
     font-weight: 500;
   }
+
   .b-navbar {
     padding: 20px 25px;
   }
+
   .b-mercedes {
     display: none;
   }
+
   .b-navbar-login {
     gap: 10px;
   }
@@ -383,6 +407,7 @@ footer ul li a {
     flex-direction: column;
     padding: 30px;
   }
+
   .b-header-box-content div {
     margin-top: 20px;
   }
@@ -410,16 +435,20 @@ footer ul li a {
     grid-template-columns: auto auto auto;
     gap: 6px;
   }
+
   .b-models-header {
     padding: 60px 2px 20px;
   }
+
   .b-navbar ul {
     display: none;
   }
+
   .b-about img {
     max-width: 300px;
     height: fit-content;
   }
+
   .b-about {
     background-color: white;
     padding: 30px;
@@ -431,24 +460,29 @@ footer ul li a {
     font-size: 12px;
     max-width: 200px;
   }
+
   footer {
     height: 670px;
     gap: 30px;
   }
+
   footer .b-footer-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   footer form input {
     width: 100% !important;
   }
+
   footer .b-footer-button-box {
     display: flex;
     width: 350px;
     justify-content: end;
   }
+
   .b-footer-nav {
     padding: 15px 35px 0px;
     font-size: 15px;
@@ -461,6 +495,7 @@ footer ul li a {
     grid-template-columns: auto auto auto;
     gap: 20px;
   }
+
   .b-footer-nav ul li:last-child {
     grid-column: 2 / 4;
   }
@@ -485,6 +520,7 @@ footer ul li a {
   justify-items: center;
   align-items: center;
 }
+
 .Y-wrapper {
   height: 100vh;
   background-color: black;
@@ -502,6 +538,7 @@ footer ul li a {
   font-size: 30px;
   grid-gap: 5px;
 }
+
 .Y-signin {
   color: white;
   display: grid;
@@ -529,6 +566,7 @@ footer ul li a {
   width: 458px;
   height: 97px;
 }
+
 .Y-button {
   background-color: black;
   border-color: white;
@@ -545,9 +583,11 @@ footer ul li a {
   font-size: 5em;
   font-weight: 500;
 }
+
 .a-add-car {
   background-color: #e0e5e7;
 }
+
 .a-main {
   background-color: #bcc3c6;
   display: grid;
@@ -557,15 +597,19 @@ footer ul li a {
   align-items: end;
   justify-items: end;
 }
+
 .a-forms {
   font-size: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1em;
   align-items: start;
   justify-content: space-evenly;
 }
+
 #a-main-div-form {
   padding: 6em 8em;
 }
@@ -582,13 +626,17 @@ footer ul li a {
 #a-main-div-form label {
   padding-left: 20px;
 }
+
 #abircars5 {
-  width: fit-content;
-  height: fit-content;
+  max-width: 100%;
+  display: block;
+
 }
+
 .a-1section {
   background-color: #050505;
 }
+
 .a-1section-h3 {
   color: white;
   font-size: 50px;
@@ -608,10 +656,12 @@ footer ul li a {
   align-items: center;
   justify-items: center;
 }
+
 #a-1section-div-form1,
 #a-1section-div-form2 {
   color: white;
 }
+
 #a-1section-div-form1 input,
 #a-1section-div-form2 input {
   border: none;
@@ -621,6 +671,7 @@ footer ul li a {
   width: 400px;
   min-height: 30px;
 }
+
 .a-1section-1img {
   width: 400px;
   padding-bottom: 2em;
@@ -637,6 +688,7 @@ footer ul li a {
   align-items: center;
   justify-items: center;
   background-color: white;
+  height: 100vh;
 }
 
 .signupClass {
@@ -716,28 +768,27 @@ hr {
   border-bottom: 1px solid black;
 }
 
-/* ==============================================Sign in an Sign up========================================================== */
+/* ==============================================END Sign in an Sign up========================================================== */
+
 
 /* ================================ PAGE DETAIL ================================== */
-.K-navbar {
-  display: flex;
-  justify-content: space-between;
-}
 
 .K-infosCar {
-  width: auto;
-  height: 100px;
+  /* width: auto; */
+  /* height: 100px;  */
   display: flex;
   justify-content: space-between;
-  background-color: #e0e5e7;
+  background-color: white;
   align-items: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
 }
 
 .K-info {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+  text-align: start;
 }
 
 .K-info-supp p {
@@ -745,11 +796,9 @@ hr {
 }
 
 .K-sectionP {
-  /* background-color: aqua; */
   padding: 20px;
   display: flex;
   gap: 20px;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 .K-sectionP-div1 {
@@ -761,10 +810,11 @@ hr {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 46.52%;
+  width: 43.52%;
 }
 .K-sectionP-infos p {
   height: 75px;
+  align-content: center;
   align-content: center;
   padding: 15px;
 }
@@ -788,7 +838,7 @@ hr {
 
 .K-sectionP-imgCar {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   height: 50%;
@@ -823,10 +873,12 @@ hr {
   text-align: center;
   background-color: #bcc3c6;
 }
+
 .K-sectionP-imgCar-Pimages img {
   display: flex;
   height: 96px;
 }
+
 .K-sectionP-autres {
   background-color: #ffffff;
   padding: 20px;
