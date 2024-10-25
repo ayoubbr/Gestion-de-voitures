@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", monospace, serif;
   background-color: var(--bg-color);
@@ -54,9 +58,66 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 5px 65px;
+  align-items: center;
+}
+
+.b-navbar .bars {
+  display: none;
+}
+
+.b-navbar-login {
+  display: flex;
+  gap: 30px;
+}
+
+.b-navbar-login a {
+  background-color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1.5px solid;
+  transition: 0.4s;
+}
+
+.b-navbar-login a:hover {
+  background-color: white;
 }
 
 .b-navbar ul {
+  display: flex;
+  min-width: 560px;
+  justify-content: space-between;
+}
+
+.b-navbar ul a {
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.b-navbar ul a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* =============  HOME PAGE  ============== */
+
+header {
+  background-color: #e0e5e7;
+  border-radius: 6px;
+}
+
+h1 {
+  font-size: 205px;
+  text-align: center;
+  padding: 10px;
+}
+
+.B-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 65px;
+}
+
+.B-navbar ul {
   display: flex;
   min-width: 560px;
   justify-content: space-between;
@@ -99,18 +160,25 @@ h1 {
 .b-main-btn,
 .b-second-btn {
   color: white;
-  border-radius: 2px;
+  border-radius: 8px;
   width: 100px;
   height: 50px;
   padding: 15px;
-  border: 0.5px solid var(--text-color);
+  border: 1.5px solid var(--text-color);
   background-color: var(--text-color);
+  transition: 0.4s;
+}
+
+.b-main-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .b-models {
   background-color: white;
   padding: 80px;
 }
+
 .b-models-cars {
   display: flex;
   justify-content: center;
@@ -119,11 +187,18 @@ h1 {
   padding-top: 50px;
   flex-wrap: wrap;
 }
+
 .b-models-cars-car {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+.b-second-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .b-models-cars-car .b-second-btn {
   padding: 5px;
   font-size: 12px;
@@ -133,11 +208,32 @@ h1 {
   width: fit-content;
 }
 
+.b-models-cars-car .b-buy-btn {
+  transition: 0.4s;
+}
+
+.b-models-cars-car .b-buy-btn:hover {
+  background-color: white;
+  color: var(--text-color);
+}
+
+.b-models-cars .b-main-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .b-models .b-main-btn {
   background-color: var(--text-color);
   padding: 10px 30px;
   border-radius: 6px;
 }
+
+.b-models .b-main-btn:hover {
+  background-color: var(--bg-color);
+}
+
 .b-second-btn {
   background-color: white;
   color: var(--text-color);
@@ -148,9 +244,11 @@ h1 {
 .b-models-cars-info .b-second-btn {
   border-radius: 0px;
 }
+
 .b-models-cars-car-img {
   position: relative;
 }
+
 .b-models-cars-car-img a {
   position: absolute;
   bottom: 20px;
@@ -179,6 +277,7 @@ h1 {
   font-size: 46px;
   padding-bottom: 30px;
 }
+
 .b-about-cars {
   display: flex;
   justify-content: center;
@@ -195,6 +294,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .b-about-link {
   display: flex;
   flex-direction: column;
@@ -209,6 +309,7 @@ h1 {
   max-width: 299px;
   text-align: center;
 }
+
 .b-about-link a {
   font-size: 16px !important;
   width: 150px !important;
@@ -224,13 +325,13 @@ h1 {
 /* =====================   FOOTER  ========================= */
 footer {
   background-color: var(--text-color);
-  height: 80vh;
+  height: 600px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
   gap: 50px;
+  border-radius: 0px 0px 6px 6px;
 }
 
 .b-footer-header {
@@ -238,6 +339,7 @@ footer {
   flex-direction: column;
   align-items: start;
 }
+
 footer .b-forms {
   display: flex;
   justify-content: center;
@@ -283,26 +385,144 @@ footer ul li a {
   body {
     padding: 10px;
   }
+
+  header {
+    height: 90vh;
+  }
+
   h1 {
-    font-size: 20px;
+    position: absolute;
+    font-size: 65px;
+    top: 150px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .b-navbar {
+    padding: 20px 25px;
+  }
+
+  .b-mercedes {
+    display: none;
+  }
+
+  .b-navbar-login {
+    gap: 10px;
+  }
+
+  .b-navbar-login a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .b-navbar span,
+  .b-navbar .bars {
+    font-size: 25px;
+  }
+
+  .b-navbar .bars {
+    display: block;
+  }
+
+  .b-header-box {
+    top: 325px;
+  }
+
+  .b-header-box-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .b-header-box-content div {
+    margin-top: 20px;
+  }
+
+  .b-models {
+    padding: 30px;
   }
 
   .b-about h2,
   .b-models h2 {
-    font-size: 20px;
+    font-size: 35px;
   }
+
+  .b-models-filter .b-second-btn,
+  .b-models-filter .b-main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .b-models-filter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+  }
+
+  .b-models-header {
+    padding: 60px 2px 20px;
+  }
+
   .b-navbar ul {
     display: none;
   }
+
   .b-about img {
     max-width: 300px;
     height: fit-content;
+  }
+
+  .b-about {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
   }
 
   .b-about p,
   .b-about a {
     font-size: 12px;
     max-width: 200px;
+  }
+
+  footer {
+    height: 670px;
+    gap: 30px;
+  }
+
+  footer .b-footer-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer form input {
+    width: 100% !important;
+  }
+
+  footer .b-footer-button-box {
+    display: flex;
+    width: 350px;
+    justify-content: end;
+  }
+
+  .b-footer-nav {
+    padding: 15px 35px 0px;
+    font-size: 15px;
+  }
+
+  .b-footer-nav ul {
+    display: grid;
+    padding: 15px 35px 0px;
+    font-size: 15px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+
+  .b-footer-nav ul li:last-child {
+    grid-column: 2 / 4;
   }
 }
 
@@ -315,15 +535,35 @@ footer ul li a {
   justify-items: center;
   align-items: center;
 }
-  /* ==============================================Sign in and Sign up========================================================== */
 
-.Y-wrapper{
-    height: 100vh;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    align-items: center;
+/* ==============================================Sign in an Sign up========================================================== */
+
+
+.Y-wrapper {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+.Y-wrapper {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+.Y-signin {
+  color: white;
+  display: grid;
+  grid-template-rows: 30% 25% 25% 20%;
+  align-items: start;
+  font-size: 30px;
+  grid-gap: 5px;
 }
 
 .Y-signin {
@@ -345,25 +585,37 @@ footer ul li a {
   height: 97px;
 }
 
-.Y-button{
-    background-color: black;
-    border-color: white;
-    border-width: 4px;
-    color: white;
-    border-radius: 0;
-    width: 458px;
-    height: 97px;
+.Y-button {
+  background-color: black;
+  border-color: white;
+  border-width: 4px;
+  color: white;
+  border-radius: 0;
+  width: 458px;
+  height: 97px;
 }
 
-/*============ adding car page =======*/
+.Y-button {
+  background-color: black;
+  border-color: white;
+  border-width: 4px;
+  color: white;
+  border-radius: 0;
+  width: 458px;
+  height: 97px;
+}
+
+/* /============ adding car page  =======/ */
 .a-add-car-h2 {
   padding: 0.5em 0em 0.5em 2em;
   font-size: 5em;
   font-weight: 500;
 }
+
 .a-add-car {
   background-color: #e0e5e7;
 }
+
 .a-main {
   background-color: #bcc3c6;
   display: grid;
@@ -373,15 +625,19 @@ footer ul li a {
   align-items: end;
   justify-items: end;
 }
+
 .a-forms {
   font-size: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1em;
   align-items: start;
   justify-content: space-evenly;
 }
+
 #a-main-div-form {
   padding: 6em 8em;
 }
@@ -398,13 +654,17 @@ footer ul li a {
 #a-main-div-form label {
   padding-left: 20px;
 }
+
 #abircars5 {
-  width: fit-content;
-  height: fit-content;
+  max-width: 100%;
+  display: block;
+
 }
+
 .a-1section {
   background-color: #050505;
 }
+
 .a-1section-h3 {
   color: white;
   font-size: 50px;
@@ -424,10 +684,12 @@ footer ul li a {
   align-items: center;
   justify-items: center;
 }
+
 #a-1section-div-form1,
 #a-1section-div-form2 {
   color: white;
 }
+
 #a-1section-div-form1 input,
 #a-1section-div-form2 input {
   border: none;
@@ -437,6 +699,7 @@ footer ul li a {
   width: 400px;
   min-height: 30px;
 }
+
 .a-1section-1img {
   width: 400px;
   padding-bottom: 2em;
@@ -445,11 +708,11 @@ footer ul li a {
 /* ========================================================================================== */
 
 
-.icons img{
+.icons img {
   height: 16px;
 }
 
-.Y-container{
+.Y-container {
   height: fit-content;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -459,49 +722,50 @@ footer ul li a {
   height: 100vh;
 }
 
-.signupClass{
+.signupClass {
   text-align: center;
   font-size: 34px;
   color: black;
   padding-bottom: 34px;
 }
 
-.Y-container2{
+.Y-container2 {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
 
 }
 
-.icon-wrapper{
+.icon-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 45px;
   border: 2px solid black;
-  
+
 }
 
-.icons{
+.icons {
   padding: 10px;
 }
 
-.hr-line p{
+.hr-line p {
   padding-left: 15px;
   padding-right: 15px;
 }
-hr{
+
+hr {
   width: 193px;
 }
 
-.hr-line{
+.hr-line {
   display: flex;
   flex-direction: row;
   align-items: center;
 
 }
 
-.Y-form-container{
+.Y-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -510,33 +774,410 @@ hr{
   border: 2px solid black;
 }
 
-.Y-name-inputs{
+.Y-name-inputs {
   display: flex;
   flex-direction: row;
   gap: 15px;
   padding-top: 25px;
 }
 
-.names-input{
+.names-input {
   display: flex;
   flex-direction: column;
 }
 
-.input-box{
+.input-box {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.Y-input{
+.Y-input {
   display: flex;
   flex-direction: column;
 }
 
 .Y-input input,
-.names-input input{
+.names-input input {
   border: none;
   border-bottom: 1px solid black;
+}
+
+/* ==============================================END Sign in an Sign up========================================================== */
+
+
+/* ================================ PAGE DETAIL ================================== */
+
+.K-infosCar {
+  /* width: auto; */
+  /* height: 100px;  */
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.K-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: start;
+}
+
+.K-info-supp p {
+  color: #969696;
+}
+
+
+.K-sectionP {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* background-color: ; */
+}
+
+.K-header-navbar {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5px 65px; */
+
+}
+
+.K-header-navbar ul {
+  display: flex;
+  min-width: 560px;
+  justify-content: space-between;
+}
+
+.K-sectionP-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.K-sectionP-infos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 43.52%;
+}
+
+.K-sectionP-infos p {
+  height: 75px;
+  align-content: center;
+  padding: 15px;
+}
+
+.K-desc1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #BCC3C6;
+}
+
+.K-desc2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.K-desc3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.K-desc4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.K-sectionP-imgCar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 50%;
+}
+
+.K-sectionP-imgCar-Gimage {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 450px;
+}
+
+
+.K-sectionP-imgCar-Pimages {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionP-imgCar-Pimages-img1 {
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sectionP-imgCar-Pimages-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #BCC3C6;
+}
+
+.K-sectionP-imgCar-Pimages img {
+  display: flex;
+  height: 96px;
+}
+
+.K-sectionP-autres {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.K-Overview {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.K-Overview-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.K-Overview-desc1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.K-Overview-desc2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #999999;
+  gap: 20px;
+
+}
+
+.K-Overview-desc3 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+
+}
+
+.K-Overview-desc4 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #999999;
+  gap: 20px;
+
+}
+
+@media (max-width:1000px) {
+  .K-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .K-sectionP-imgCar-Pimages {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .K-sectionP {
+    display: flex;
+    justify-content: center;
+  }
+
+  .K-sectionP-imgCar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .K-sectionP-infos {
+    width: 100%;
+  }
+
+  .K-sectionP-autres {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 451px) {
+  .K-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .K-sectionP{
+    display: flex;
+    justify-content: center;
+  } */
+
+  .K-sectionP-imgCar {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 100%;
+  }
+
+  .K-infosCar {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+  }
+
+  .K-info {
+    display: none;
+    padding: 20px;
+  }
+
+  .K-sectionP-div1 {
+    width: 100%;
+  }
+
+  .K-sectionP-imgCar-Gimage img {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .K-sectionP-imgCar-Pimages {
+    display: flex;
+    gap: 5px;
+  }
+
+  .K-sectionP-imgCar-Pimages img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .K-sectionP-autres {
+    background-color: #FFFFFF;
+    /* padding: 20px; */
+    border-radius: 15px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .K-Overview-desc {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
+  }
+
+}
+
+/* ================================ PAGE DETAIL ================================== */
+
+
+.a-2section-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.a-basket-main {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+}
+
+.a-basket-main-div {
+  margin: 2em;
+  padding: 2em;
+  background-color: white;
+  display: flex;
+  gap: 6em;
+  flex-wrap: wrap;
+}
+
+.a-main-div-img {
+  display: block;
+  max-width: 100%;
+}
+
+.a-main-div-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: end;
+}
+
+@media (max-width: 451px) {
+  .a-main {
+    background-color: #BCC3C6;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: end;
+    justify-items: end;
+  }
+
+  #a-main-div-form input {
+    border-bottom: 0.5px solid black;
+    background-color: #BCC3C6;
+    width: 100px;
+    min-height: 5px;
+  }
+
+  #a-main-div-form label {
+    padding-left: 5px;
+  }
+
+  a-add-car-h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+  #a-1section-div-form1 input,
+  #a-1section-div-form2 input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 200px;
+    min-height: 10px;
+  }
+
+  #abircars5 {
+    max-width: 10%;
+  }
+
 }
 
 /* ==============================================Sign in an Sign up========================================================== */
