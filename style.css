@@ -842,7 +842,7 @@ footer ul li a {
   padding-bottom: 2em;
 }
 @media (max-width: 451px) {
-  #abircar5{
+  #abircar5 {
     display: none;
   }
 }
@@ -1104,7 +1104,7 @@ hr {
   gap: 20px;
 }
 
-.K-modify{
+.K-modify {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -1117,15 +1117,14 @@ hr {
   height: 50px;
   background-color: var(--text-color);
   transition: 0.4s;
-  
 }
 
-.K-add{
+.K-add {
   display: flex;
   justify-content: end;
   padding: 20px;
 }
-.K-addcar{
+.K-addcar {
   color: white;
   border-radius: 8px;
   width: 100px;
@@ -1212,7 +1211,7 @@ hr {
 }
 /* =============================== version mobile =========================================*/
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .K-header {
     width: 100%;
     display: flex;
@@ -1306,7 +1305,7 @@ hr {
   }
 
   .K-sectionP-autres {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* padding: 20px; */
     border-radius: 15px;
   }
@@ -1320,91 +1319,86 @@ hr {
     justify-content: space-between;
     text-align: center;
     width: 100%;
-
   }
 }
 
 /* ================================ PAGE DETAIL ================================== */
 /* ================================page checkout==================================*/
 
-.Y-big-line{
+.Y-big-line {
   width: 1300px;
   margin: 32px;
 }
 
-.Y-between-lines{
+.Y-between-lines {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 15px;
-
 }
 
-.Y-check{
+.Y-check {
   padding-bottom: 20px;
   font-size: 30px;
 }
 
-.Y-checkout-area{
-  background-color: #D5D5D5;
+.Y-checkout-area {
+  background-color: #d5d5d5;
 }
 
-.Y-payment-div{
+.Y-payment-div {
   padding-bottom: 10px;
 }
 
-.Y-payment-div .Y-p-para{
+.Y-payment-div .Y-p-para {
   font-size: 14px;
 }
 
-.Y-payment-div .Y-PP-para{
+.Y-payment-div .Y-PP-para {
   font-size: 20px;
 }
 
-.Y-P-details{
+.Y-P-details {
   display: flex;
   flex-direction: column;
 }
 
-.Y-checkout-area{
+.Y-checkout-area {
   display: flex;
   flex-direction: row;
-  
 }
 
 /*========================================== dialog**********************/
-.a-modify{
-  
+.a-modify {
   padding: 5em;
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color:#E0E5E7;
+  background-color: #e0e5e7;
   border-radius: 8px;
   flex-direction: column;
   gap: 2em;
   flex-wrap: wrap;
 }
-.a-dialog-main-form{
+.a-dialog-main-form {
   display: flex;
   flex-direction: column;
 }
-.a-dialog-section{
-
+.a-dialog-section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2em;
 }
-.a-dialog-section-div{
+.a-dialog-section-div {
   background-color: white;
   padding: 4em;
   border-radius: 14px;
   border-color: #050505;
 }
-.a-dialog-main-div{
+.a-dialog-main-div {
   padding: 4em;
   display: flex;
   flex-wrap: wrap;
@@ -1412,87 +1406,82 @@ hr {
   flex-direction: row;
   gap: 2em;
 }
-.a-dialog-main-form input{
+.a-dialog-main-form input {
   border: none;
   border-bottom: 1px solid black;
   color: black;
   width: 15em;
   min-height: 2em;
 }
-.a-modify-h3{
+.a-modify-h3 {
   text-align: center;
   padding: 1em;
   font-size: 2em;
   font-weight: 400;
 }
-.a-dialog-main{
+.a-dialog-main {
   border-radius: 14px;
- background-color: white;
+  background-color: white;
 }
 .a-dialog-btn {
   display: flex;
   justify-content: space-around;
 }
-.a-dialog-btn button{
-  border: 0.2em black ;
+.a-dialog-btn button {
+  border: 0.2em black;
   border-radius: 5px;
   padding: 0.5em 1em;
   background-color: #050505;
   color: white;
 }
-.a-dialog-btn2{
+.a-dialog-btn2 {
   display: flex;
   gap: 2em;
 }
 /*============================== fin modifying ==========*/
 /*********************** basket *********************/
-.a-basket-main{
+.a-basket-main {
   display: flex;
   flex-direction: column;
   gap: 2em;
   flex-wrap: wrap;
 }
-.a-basket-main-div{
+.a-basket-main-div {
   display: flex;
   /* flex-direction: ; */
   /* align-content: center; */
   background-color: white;
   gap: 2em;
-  
 }
-.a-main-div-img{
+.a-main-div-img {
   display: block;
   max-width: 20%;
- 
-
 }
-.a-main-div-div{
+.a-main-div-div {
   display: flex;
   gap: 45em;
   align-items: center;
   justify-content: center;
-
 }
 .a-main-div-div a,
-.order-all a{
+.order-all a {
   padding: 0.2em 0.5em;
   font-size: 20.5m;
   background-color: red;
   border-radius: 8px;
 }
-.a-main-div-div-div{
+.a-main-div-div-div {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  flex-wrap: wrap ;
-
+  flex-wrap: wrap;
 }
-.order-all a{
+.order-all a {
   display: flex;
   align-content: end;
   margin-bottom: 2em;
   align-items: center;
- justify-items: center;
+  justify-items: center;
   color: white;
   padding: 0.2em 0.5em;
   font-size: 1.5em;
