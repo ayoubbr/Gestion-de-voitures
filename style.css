@@ -314,7 +314,8 @@ footer ul li a {
   grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
-  ==============================================Sign in an Sign up==========================================================
+}
+  /* ==============================================Sign in and Sign up========================================================== */
 
 .Y-wrapper{
     height: 100vh;
@@ -342,6 +343,8 @@ footer ul li a {
   border-radius: 0;
   width: 458px;
   height: 97px;
+}
+
 .Y-button{
     background-color: black;
     border-color: white;
@@ -439,6 +442,8 @@ footer ul li a {
   padding-bottom: 2em;
 }
 
+/* ========================================================================================== */
+
 
 .icons img{
   height: 16px;
@@ -451,6 +456,7 @@ footer ul li a {
   align-items: center;
   justify-items: center;
   background-color: white;
+  height: 100vh;
 }
 
 .signupClass{
@@ -533,4 +539,4 @@ hr{
   border-bottom: 1px solid black;
 }
 
-==============================================Sign in an Sign up==========================================================
+/* ==============================================Sign in an Sign up========================================================== */
